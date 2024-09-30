@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container bg-dark text-white">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../images/kite-logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          KITE
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-primary">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-primary">
+                <a class="nav-link" href="../pages/signup.htm">Signup</a>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-primary">
+                <a class="nav-link" href="../pages/login.htm"> Signin</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <form class="row g-3">
+      <div class="col-md-3">
+        <label for="usertype" class="form-label">User-type</label>
+        <select id="usertype" class="form-select">
+          <option selected>User</option>
+          <option>Admin</option>
+        </select>
+      </div>
+      <div class="col-5">
+        <label for="inputAddress" class="form-label">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="first Name"
+        />
+      </div>
+      <div class="col-4">
+        <label for="inputAddress" class="form-label">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="last Name"
+        />
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="email"
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="inputEmail4" class="form-label">Mobile No.</label>
+        <input
+          type="number"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="mobile no."
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="inputPassword4"
+          placeholder="password"
+        />
+      </div>
+
+      <div class="col-md-3">
+        <label for="gender" class="form-label">Gender</label>
+        <select id="gender" class="form-select">
+          <option selected>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="col-9">
+        <label for="userbio" class="form-label">Bio</label>
+        <input
+          type="text"
+          class="form-control"
+          id="userbio"
+          placeholder="something about yourself"
+        />
+      </div>
+
+      <div class="col-9">
+        <label for="useraddress" class="form-label">Address</label>
+        <input
+          type="text"
+          class="form-control"
+          id="useraddress"
+          placeholder="apartment, studio, or floor"
+        />
+      </div>
+      <div class="col-3">
+        <label for="Profile-pic" class="form-label">Profile-pic</label>
+        <button type="button" class="btn btn-secondary">
+          <input
+            type="file"
+            class="col-12 bg-secondary rounded"
+            id="Profile-pic"
+          />
+        </button>
+      </div>
+      <br />
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">
+          <a
+            style="text-decoration: none"
+            class="text-white"
+            href="../pages/login.htm"
+            >Sign in</a
+          >
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

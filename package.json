@@ -1,0 +1,17 @@
+{
+  "name": "kite_frontend",
+  "version": "1.0.0",
+  "description": "Frontend app using bootstrap HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files *.html, *.css, *.js --host 192.168.0.159 --port 8080 --browser default"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
