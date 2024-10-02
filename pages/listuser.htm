@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category</title>
+    <title>User Control</title>
 
     <!-- Include jQuery before AdminLTE JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -319,33 +319,52 @@
       </div>
     </aside>
 
-    <div
-      style="margin-left: 300px; margin-top: 30px; margin-right: 70px"
-      class="card card-success"
-    >
-      <div class="card-header">
-        <h3 class="card-title">Add Category</h3>
-      </div>
-      <div class="card-body">
-        <form>
-          <input
-            class="form-control form-control-lg"
-            type="text"
-            placeholder="category name"
-          />
-          <br />
-          <textarea
-            class="form-control"
-            type="text"
-            placeholder="category description"
-          ></textarea>
-          <br />
-          <input class="btn btn-success" type="submit" value="Create" />
-        </form>
-      </div>
-    </div>
 
-    
+    <table class="table table-hover text-nowrap">
+        <thead>
+        <tr>
+        <th>ID</th>
+        <th>User</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Reason</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>183</td>
+        <td>John Doe</td>
+        <td>11-7-2014</td>
+        <td><span class="tag tag-success">Approved</span></td>
+        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+        </tr>
+        <tr>
+        <td>219</td>
+        <td>Alexander Pierce</td>
+        <td>11-7-2014</td>
+        <td><span class="tag tag-warning">Pending</span></td>
+        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+        </tr>
+        <tr>
+        <td>657</td>
+        <td>Bob Doe</td>
+        <td>11-7-2014</td>
+        <td><span class="tag tag-primary">Approved</span></td>
+        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+        </tr>
+        <tr>
+        <td>175</td>
+        <td>Mike Doe</td>
+        <td>11-7-2014</td>
+        <td><span class="tag tag-danger">Denied</span></td>
+        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+        </tr>
+        </tbody>
+        </table>
+
+
+
+
     <!-- AdminLTE script to enable sidebar functionality -->
     <script>
       $(document).ready(function () {

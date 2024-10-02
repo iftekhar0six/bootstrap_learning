@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category</title>
+    <title>Comment</title>
 
     <!-- Include jQuery before AdminLTE JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -324,28 +324,40 @@
       class="card card-success"
     >
       <div class="card-header">
-        <h3 class="card-title">Add Category</h3>
+        <h3 class="card-title">Add Comment</h3>
       </div>
       <div class="card-body">
         <form>
-          <input
-            class="form-control form-control-lg"
-            type="text"
-            placeholder="category name"
-          />
-          <br />
           <textarea
             class="form-control"
             type="text"
-            placeholder="category description"
+            placeholder="content"
           ></textarea>
           <br />
-          <input class="btn btn-success" type="submit" value="Create" />
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="category id"
+          />
+          <br />
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="sub category id"
+          />
+          <br />
+
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="post id"
+          />
+          <br />
+          <input class="btn btn-success" type="submit" />
         </form>
       </div>
     </div>
 
-    
     <!-- AdminLTE script to enable sidebar functionality -->
     <script>
       $(document).ready(function () {

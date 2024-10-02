@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category</title>
+    <title>User control</title>
 
     <!-- Include jQuery before AdminLTE JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -321,31 +321,124 @@
 
     <div
       style="margin-left: 300px; margin-top: 30px; margin-right: 70px"
-      class="card card-success"
+      class="card card-danger"
     >
       <div class="card-header">
-        <h3 class="card-title">Add Category</h3>
+        <h3 class="card-title">Update User</h3>
       </div>
-      <div class="card-body">
-        <form>
-          <input
-            class="form-control form-control-lg"
-            type="text"
-            placeholder="category name"
-          />
-          <br />
-          <textarea
-            class="form-control"
-            type="text"
-            placeholder="category description"
-          ></textarea>
-          <br />
-          <input class="btn btn-success" type="submit" value="Create" />
-        </form>
-      </div>
-    </div>
 
-    
+    <div
+      class="card-body border-dark"
+    >
+      <form class="row g-3">
+        <div class="col-md-3">
+          <label for="usertype" class=" form-label">User-type</label><br />
+          <select id="usertype" class="form-select">
+            <option selected>User</option>
+            <option>Admin</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="firstName" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            placeholder="First Name"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Last Name"
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="col-md-4">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="mobile" class="form-label">Mobile No.</label>
+          <input
+            type="number"
+            class="form-control"
+            id="mobile"
+            placeholder="Mobile No."
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="col-md-3">
+          <label for="gender" class="form-label">Gender</label><br />
+          <select id="gender" class="form-select">
+            <option selected>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="col-md-8">
+          <label for="bio" class="form-label">Bio</label>
+          <input
+            type="text"
+            class="form-control"
+            id="bio"
+            placeholder="Something about yourself"
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="col-md-8">
+          <label for="address" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="profilePic" class="form-label">Profile-pic</label>
+          <input type="file" class="form-control" id="profilePic" />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-danger">Update</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+
     <!-- AdminLTE script to enable sidebar functionality -->
     <script>
       $(document).ready(function () {
