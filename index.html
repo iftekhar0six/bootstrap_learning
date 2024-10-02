@@ -14,12 +14,14 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="container bg-dark text-white">
+  <body class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
       <div class="container">
         <a class="navbar-brand" href="./index.html">
           <img src="./images/kite-logo.png" alt="Logo" width="50" height="35" />
-          <b class="ms-2" style="font-size: 40px; vertical-align: middle"
+          <b
+            class="ms-2 text-danger"
+            style="font-size: 40px; vertical-align: middle"
             >KITE</b
           >
         </a>
@@ -52,48 +54,34 @@
       </div>
     </nav>
 
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+    <div id="demo" class="container carousel slide" data-bs-ride="carousel">
+      <div
+        style="height: 500px; width: 1200px; margin: auto"
+        class="carousel-inner"
+      >
         <div class="carousel-item active">
           <img
             src="./images/homepage/Carousel-01.jpg"
             class="d-block rounded w-100"
           />
-          <div class="carousel-caption">
-            <p>
-              “Social media is not a media. The key is to listen, engage, and
-              build relationships.”
-            </p>
-          </div>
         </div>
         <div class="carousel-item">
           <img
             src="./images/homepage/Carousel-02.jpg"
             class="d-block rounded w-100"
           />
-          <div class="carousel-caption">
-            <p>“Focus on how to be social, not on how to do social.”</p>
-          </div>
         </div>
         <div class="carousel-item">
           <img
             src="./images/homepage/Carousel-03.jpg"
             class="d-block rounded w-100"
           />
-          <div class="carousel-caption">
-            <p>
-              “Activate your fans, don't just collect them like baseball cards.”
-            </p>
-          </div>
         </div>
         <div class="carousel-item">
           <img
             src="./images/homepage/Carousel-04.jpg"
             class="d-block rounded w-100"
           />
-          <div class="carousel-caption">
-            <p>“If content is king, then conversion is queen.”</p>
-          </div>
         </div>
       </div>
 
@@ -112,6 +100,17 @@
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <br />
+    <div class="">
+      <button
+        style="margin-left: 150px"
+        class="btn btn-outline-primary text-dark"
+      >
+        <a style="text-decoration: none" href="./admin_home.html">
+          Admin-Home</a
+        >
       </button>
     </div>
   </body>
