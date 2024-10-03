@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Follow</title>
+    <title>User Control</title>
 
     <!-- Include jQuery before AdminLTE JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -327,7 +327,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Follow an Account</h1>
+                <h1>Category List</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -342,33 +342,293 @@
         <section class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12">
-                <div class="card card-primary">
+              <div class="col-12">
+                <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">User credentials</h3>
-                  </div>
-
-                  <form>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="form-group col-md-5">
-                          <label for="deleteuser">User Detail</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="deleteuser"
-                            placeholder="Mongo id of the user"
-                          />
+                    <h3 class="card-title">Category Data</h3>
+                    <div class="card-tools">
+                      <div
+                        class="input-group input-group-sm"
+                        style="width: 150px"
+                      >
+                        <input
+                          type="text"
+                          name="table_search"
+                          class="form-control float-right"
+                          placeholder="Search"
+                        />
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">
-                        Follow
-                      </button>
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>Category Name</th>
+                          <th>Creator Name</th>
+                          <th>Creator Email</th>
+                          <th>Creator Id</th>
+                          <th>Category Id</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Web-3 Technology</td>
+                          <td>John</td>
+                          <td>
+                            <span class="tag tag-success"
+                              >jodeeo1212@yomail.com</span
+                            >
+                          </td>
+                          <td>66c5667d4103cf40ada8a89d</td>
+                          <td>66c5668a4103cf60ada8a8a3</td>
+                        </tr>
+                        <tr>
+                          <td>AI and Robotics</td>
+                          <td>Bruce</td>
+                          <td>
+                            <span class="tag tag-success"
+                              >bruce440@gmail.com</span
+                            >
+                          </td>
+                          <td>66c5668a4103cf40ada8a8a2</td>
+                          <td>66c5667d4103cf40ada8a89d</td>
+                        </tr>
+                        <tr>
+                          <td>Crime File and Series</td>
+                          <td>Peter</td>
+                          <td>
+                            <span class="tag tag-success"
+                              >peter9parker@yahoo.com</span
+                            >
+                          </td>
+                          <td>66c5667d4103cf40ada8a89d</td>
+                          <td>66c5668a4103cf40ada8a8a1</td>
+                        </tr>
+                        <tr>
+                          <td>Banking Statistics</td>
+                          <td>Billy</td>
+                          <td>
+                            <span class="tag tag-success"
+                              >butcher660@outlook.com</span
+                            >
+                          </td>
+                          <td>66e288a1a16f0713b1805f3c</td>
+                          <td>66c5668a4103cf40ada8a8a2</td>
+                        </tr>
+                        <tr>
+                          <td>Food and Exploration</td>
+                          <td>Fiona</td>
+                          <td>
+                            <span class="tag tag-success"
+                              >fiona7787@iocloud.com</span
+                            >
+                          </td>
+                          <td>66c5668a4103cf40ada8a8a2</td>
+                          <td>66e288a1a16f0713b1805f3c</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5">
+                    <div
+                      class="dataTables_info"
+                      id="example2_info"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      Showing 1 to 10 of 57 entries
                     </div>
-                  </form>
+                  </div>
+                  <div class="col-sm-12 col-md-7">
+                    <div
+                      class="dataTables_paginate paging_simple_numbers"
+                      id="example2_paginate"
+                    >
+                      <ul class="pagination">
+                        <li
+                          class="paginate_button page-item previous disabled"
+                          id="example2_previous"
+                        >
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="0"
+                            tabindex="0"
+                            class="page-link"
+                            >Previous</a
+                          >
+                        </li>
+                        <li class="paginate_button page-item active">
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="1"
+                            tabindex="0"
+                            class="page-link"
+                            >1</a
+                          >
+                        </li>
+                        <li class="paginate_button page-item">
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="2"
+                            tabindex="0"
+                            class="page-link"
+                            >2</a
+                          >
+                        </li>
+                        <li class="paginate_button page-item">
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="3"
+                            tabindex="0"
+                            class="page-link"
+                            >3</a
+                          >
+                        </li>
+                        <li class="paginate_button page-item">
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="4"
+                            tabindex="0"
+                            class="page-link"
+                            >4</a
+                          >
+                        </li>
+                        <li class="paginate_button page-item">
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="5"
+                            tabindex="0"
+                            class="page-link"
+                            >5</a
+                          >
+                        </li>
+                        <li class="paginate_button page-item">
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="6"
+                            tabindex="0"
+                            class="page-link"
+                            >6</a
+                          >
+                        </li>
+                        <li
+                          class="paginate_button page-item next"
+                          id="example2_next"
+                        >
+                          <a
+                            href="#"
+                            aria-controls="example2"
+                            data-dt-idx="7"
+                            tabindex="0"
+                            class="page-link"
+                            >Next</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Category Statistics</h3>
+                  </div>
+
+                  <div class="card-body">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">#</th>
+                          <th>Category</th>
+                          <th>Count</th>
+                          <th>Progress</th>
+                          <th style="width: 40px">Visual</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.</td>
+                          <td>Category created last month</td>
+                          <td>264</td>
+                          <td>
+                            <div class="progress progress-xs">
+                              <div
+                                class="progress-bar bg-primary"
+                                style="width: 55%"
+                              ></div>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-success">55%</span></td>
+                        </tr>
+                        <tr>
+                          <td>2.</td>
+                          <td>Category created in last year</td>
+                          <td>3541</td>
+                          <td>
+                            <div class="progress progress-xs">
+                              <div
+                                class="progress-bar bg-primary"
+                                style="width: 70%"
+                              ></div>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-success">70%</span></td>
+                        </tr>
+                        <tr>
+                          <td>3.</td>
+                          <td>Category deactivated last month</td>
+                          <td>93</td>
+                          <td>
+                            <div
+                              class="progress progress-xs progress-striped active"
+                            >
+                              <div
+                                class="progress-bar bg-danger"
+                                style="width: 30%"
+                              ></div>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-warning">30%</span></td>
+                        </tr>
+                        <tr>
+                          <td>4.</td>
+                          <td>Category deactivated last year</td>
+                          <td>1206</td>
+                          <td>
+                            <div
+                              class="progress progress-xs progress-striped active"
+                            >
+                              <div
+                                class="progress-bar bg-danger"
+                                style="width: 67%"
+                              ></div>
+                            </div>
+                          </td>
+                          <td><span class="badge bg-warning">72%</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>

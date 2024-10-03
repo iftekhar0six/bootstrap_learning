@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Follow</title>
+    <title>Category</title>
 
     <!-- Include jQuery before AdminLTE JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -327,7 +327,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Follow an Account</h1>
+                <h1>Deactivate Category</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -343,29 +343,41 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
-                <div class="card card-primary">
+                <div class="card card-danger">
                   <div class="card-header">
-                    <h3 class="card-title">User credentials</h3>
+                    <h3 class="card-title">Category Details</h3>
                   </div>
 
                   <form>
                     <div class="card-body">
                       <div class="row">
                         <div class="form-group col-md-5">
-                          <label for="deleteuser">User Detail</label>
+                          <label for="deletecategory">Category Id</label>
                           <input
                             type="text"
                             class="form-control"
-                            id="deleteuser"
-                            placeholder="Mongo id of the user"
+                            id="deletecategory"
+                            placeholder="Mongo id of the category"
                           />
                         </div>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          class="custom-control-input custom-control-input-danger"
+                          type="checkbox"
+                          id="deletecategoryconfirm"
+                        />
+                        <label
+                          for="deletecategoryconfirm"
+                          class="custom-control-label"
+                          >Confirm to deactivate category</label
+                        >
                       </div>
                     </div>
 
                     <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">
-                        Follow
+                      <button type="submit" class="btn btn-danger">
+                        Deactivate Account
                       </button>
                     </div>
                   </form>

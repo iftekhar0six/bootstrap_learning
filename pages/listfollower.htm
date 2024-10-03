@@ -321,13 +321,12 @@
           </nav>
         </div>
       </aside>
-
       <div class="content-wrapper" style="min-height: 1302.12px">
         <section class="content-header">
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Follow an Account</h1>
+                <h1>Follower List</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -342,33 +341,275 @@
         <section class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12">
-                <div class="card card-primary">
+              <div class="col-12">
+                <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">User credentials</h3>
-                  </div>
-
-                  <form>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="form-group col-md-5">
-                          <label for="deleteuser">User Detail</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="deleteuser"
-                            placeholder="Mongo id of the user"
-                          />
+                    <h3 class="card-title">Follow Data</h3>
+                    <div class="card-tools">
+                      <div
+                        class="input-group input-group-sm"
+                        style="width: 150px"
+                      >
+                        <input
+                          type="text"
+                          name="table_search"
+                          class="form-control float-right"
+                          placeholder="Search"
+                        />
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">
-                        Follow
-                      </button>
+                  <div class="card-body">
+                    <div
+                      id="example2_wrapper"
+                      class="dataTables_wrapper dt-bootstrap4"
+                    >
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6"></div>
+                        <div class="col-sm-12 col-md-6"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <table
+                            id="example2"
+                            class="table table-bordered table-hover dataTable dtr-inline"
+                            aria-describedby="example2_info"
+                          >
+                            <thead>
+                              <tr>
+                                <th
+                                  class="sorting sorting_asc"
+                                  tabindex="0"
+                                  aria-controls="example2"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label="Rendering engine: activate to sort column descending"
+                                  aria-sort="ascending"
+                                >
+                                  Follower Id
+                                </th>
+                                <th
+                                  class="sorting"
+                                  tabindex="0"
+                                  aria-controls="example2"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label="Browser: activate to sort column ascending"
+                                >
+                                  Follower Email
+                                </th>
+                                <th
+                                  class="sorting"
+                                  tabindex="0"
+                                  aria-controls="example2"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label="Platform(s): activate to sort column ascending"
+                                >
+                                  Following Id
+                                </th>
+                                <th
+                                  class="sorting"
+                                  tabindex="0"
+                                  aria-controls="example2"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label="Engine version: activate to sort column ascending"
+                                >
+                                  Following Email
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>66c5668a4103cf60ada8a8a3</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >jodeeo1212@yomail.com</span
+                                  >
+                                </td>
+                                <td>66c5667d4103cf40ada8a89d</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >billy45@adf.com</span
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>66c5668a4103cf60ada8a8a3</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >peter23@outlook.com</span
+                                  >
+                                </td>
+                                <td>66c5667d4103cf40ada8a89d</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >jodeeo1212@yomail.com</span
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>66c5668a4103cf60ada8a8a3</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >peter23@outlook.com</span
+                                  >
+                                </td>
+                                <td>66c5667d4103cf40ada8a89d</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >billy42345@adf.com</span
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>66c5668a4103cf60ada8a8a3</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >jodeeo1212@yomail.com</span
+                                  >
+                                </td>
+                                <td>66c5667d4103cf40ada8a89d</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >allison998@gmail.com</span
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>66c5668a4103cf60ada8a8a3</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >tom776@yahoo.com</span
+                                  >
+                                </td>
+                                <td>66c5667d4103cf40ada8a89d</td>
+                                <td>
+                                  <span class="tag tag-success"
+                                    >drako5565@iocare.com</span
+                                  >
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 col-md-5">
+                          <div
+                            class="dataTables_info"
+                            id="example2_info"
+                            role="status"
+                            aria-live="polite"
+                          >
+                            Showing 1 to 10 of 57 entries
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-7">
+                          <div
+                            class="dataTables_paginate paging_simple_numbers"
+                            id="example2_paginate"
+                          >
+                            <ul class="pagination">
+                              <li
+                                class="paginate_button page-item previous disabled"
+                                id="example2_previous"
+                              >
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="0"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >Previous</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item active">
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="1"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >1</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item">
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="2"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >2</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item">
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="3"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >3</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item">
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="4"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >4</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item">
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="5"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >5</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item">
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="6"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >6</a
+                                >
+                              </li>
+                              <li
+                                class="paginate_button page-item next"
+                                id="example2_next"
+                              >
+                                <a
+                                  href="#"
+                                  aria-controls="example2"
+                                  data-dt-idx="7"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >Next</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>

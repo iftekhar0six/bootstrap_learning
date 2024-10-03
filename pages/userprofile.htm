@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Follow</title>
+    <title>User control</title>
 
     <!-- Include jQuery before AdminLTE JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -327,7 +327,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Follow an Account</h1>
+                <h1>User Profile</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -340,35 +340,105 @@
         </section>
 
         <section class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card card-primary">
-                  <div class="card-header">
-                    <h3 class="card-title">User credentials</h3>
-                  </div>
-
-                  <form>
+          <div class="container">
+            <div class="main-body">
+              <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
                     <div class="card-body">
-                      <div class="row">
-                        <div class="form-group col-md-5">
-                          <label for="deleteuser">User Detail</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="deleteuser"
-                            placeholder="Mongo id of the user"
-                          />
+                      <div
+                        class="d-flex flex-column align-items-center text-center"
+                      >
+                        <img
+                          src="../images/adminpanel/user/user-image.png"
+                          alt="Admin"
+                          class="rounded-circle"
+                          width="150"
+                        />
+                        <div class="mt-3">
+                          <h4>Bruce Wayne</h4>
+                          <p class="text-secondary mb-1">Web-3 Expert</p>
+                          <p class="text-muted font-size-sm">
+                            Bay Area, Gautham, New York City
+                          </p>
                         </div>
                       </div>
                     </div>
-
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">
-                        Follow
-                      </button>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">First Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">Bruce</div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Last Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">Wayne</div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Email</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          bruce477@iocloud.com
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Mobile No.</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">9456311586</div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Location</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          Bay Area, Gautham, New York City
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Bio</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          By day, I'm Bruce Wayne, billionaire CEO of Wayne
+                          Enterprises and philanthropist. But by night, I become
+                          Batman. After witnessing my parents' murder, I vowed
+                          to rid Gotham of crime. I've honed my mind and body to
+                          their peak, mastering martial arts, detective work,
+                          and fear. Using advanced tech and an unshakable sense
+                          of justice, I fight criminals from street thugs to
+                          Gotham’s worst villains—Joker, Bane, Scarecrow, and
+                          more. Through Wayne Enterprises, I uplift the city,
+                          but my life is consumed by my mission. I am vengeance.
+                          I am the night. I am Batman.
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <a
+                            class="btn btn-info"
+                            target="__blank"
+                            href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills"
+                            >Edit</a
+                          >
+                        </div>
+                      </div>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>

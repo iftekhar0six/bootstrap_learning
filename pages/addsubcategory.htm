@@ -23,339 +23,380 @@
   </head>
 
   <body class="hold-transition sidebar-mini layout-fixed">
-    <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-      <!-- Left navbar links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <!-- Sidebar toggle button -->
-          <a class="nav-link" data-widget="pushmenu" href="#" role="button">
-            <i class="fas fa-bars"></i>
-          </a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
-      </ul>
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- Sidebar toggle button -->
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="../admin_home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="https://github.com/iftekhar0six" class="nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
 
-      <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            data-widget="control-sidebar"
-            data-slide="true"
-            href="#"
-            role="button"
-          >
-            <i class="fas fa-th-large"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-widget="control-sidebar"
+              data-slide="true"
+              href="#"
+              role="button"
+            >
+              <i class="fas fa-th-large"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo -->
-      <a href="#" class="brand-link">
-        <img
-          src="../images/kite-logo.png"
-          alt="AdminLTE Logo"
-          class="brand-image img-circle elevation-3"
-          style="opacity: 0.8"
-        />
-        <span class="brand-text font-weight-light">KITE</span>
-      </a>
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="../admin_home.html" class="brand-link">
+          <img
+            src="../images/kite-logo.png"
+            alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
+          <span class="brand-text font-weight-light">KITE</span>
+        </a>
 
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Sidebar user panel -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img
-              src="../images/adminpanel/user/user-image.png"
-              class="img-circle elevation-2"
-              alt="User Image"
-            />
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img
+                src="../images/adminpanel/user/user-image.png"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
+            </div>
+            <div class="info">
+              <a href="../admin_home.html" class="d-block">Bruce Wayne</a>
+            </div>
           </div>
-          <div class="info">
-            <a href="#" class="d-block">Bruce Wayne</a>
-          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+            >
+              <li class="nav-item menu-open">
+                <ul class="nav nav-treeview">
+                  <!-- User Control Dropdown -->
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-users nav-icon"></i>
+                      <p>
+                        User Control
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <!-- Dropdown Items -->
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="./listuser.htm" class="nav-link">
+                          <i class="fas fa-user nav-icon"></i>
+                          <!-- Changed to user icon -->
+                          <p>List User</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./updateuser.htm" class="nav-link">
+                          <i class="fas fa-user-edit nav-icon"></i>
+                          <!-- Changed to user edit icon -->
+                          <p>Update User</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./deleteuser.htm" class="nav-link">
+                          <i class="fas fa-user-times nav-icon"></i>
+                          <!-- Changed to user delete icon -->
+                          <p>Delete User</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Category Dropdown -->
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-th-large nav-icon"></i>
+                      <p>
+                        Category
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <!-- Dropdown Items -->
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="./listcategory.htm" class="nav-link">
+                          <i class="fas fa-list nav-icon"></i>
+                          <!-- Changed to list icon -->
+                          <p>Category List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./addcategory.htm" class="nav-link">
+                          <i class="fas fa-plus nav-icon"></i>
+                          <!-- Changed to add icon -->
+                          <p>Add Category</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./deletecategory.htm" class="nav-link">
+                          <i class="fas fa-tag fa-times nav-icon"></i>
+                          <!-- Changed to tag icon -->
+                          <p>Delete Category</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Comment Dropdown -->
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-comments nav-icon"></i>
+                      <p>
+                        Comment
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="./comment.htm" class="nav-link">
+                          <i class="fas fa-comment-dots nav-icon"></i>
+                          <!-- Changed to comment dots icon -->
+                          <p>Add Comment</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./listcomment.htm" class="nav-link">
+                          <i class="fas fa-comments nav-icon"></i>
+                          <!-- Kept comments icon -->
+                          <p>Comment List</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Follow Dropdown -->
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-user-plus nav-icon"></i>
+                      <p>
+                        Follow
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="./follow.htm" class="nav-link">
+                          <i class="fas fa-user-friends nav-icon"></i>
+                          <!-- Changed to user friends icon -->
+                          <p>Follow</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./listfollower.htm" class="nav-link">
+                          <i class="fas fa-users nav-icon"></i>
+                          <!-- Changed to users icon -->
+                          <p>List Followers</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Message Dropdown -->
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-envelope nav-icon"></i>
+                      <p>
+                        Message
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="inbox.html" class="nav-link">
+                          <i class="fas fa-inbox nav-icon"></i>
+                          <!-- Changed to inbox icon -->
+                          <p>Inbox</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./message.htm" class="nav-link">
+                          <i class="fas fa-paper-plane nav-icon"></i>
+                          <!-- Changed to paper plane icon -->
+                          <p>Send Messages</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Post Dropdown -->
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-pencil-alt nav-icon"></i>
+                      <p>
+                        Post
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="post-list.html" class="nav-link">
+                          <i class="fas fa-file-alt nav-icon"></i>
+                          <!-- Changed to file icon -->
+                          <p>Post List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./addpost.htm" class="nav-link">
+                          <i class="fas fa-plus-circle nav-icon"></i>
+                          <!-- Changed to plus circle icon -->
+                          <p>Create Post</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Sub-Category Dropdown -->
+                  <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-tags nav-icon"></i>
+                      <p>
+                        Sub-Category
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="subcategory-list.html" class="nav-link">
+                          <i class="fas fa-tag nav-icon"></i>
+                          <!-- Changed to tag icon -->
+                          <p>Sub-Category List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./addsubcategory.htm" class="nav-link">
+                          <i class="fas fa-plus nav-icon"></i>
+                          <!-- Changed to plus icon -->
+                          <p>Add Sub-Category</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="settings.html" class="nav-link">
+                  <i class="fas fa-cog nav-icon"></i>
+                  <p>Settings</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="logout.html" class="nav-link">
+                  <i class="fas fa-sign-out-alt nav-icon"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </aside>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul
-            class="nav nav-pills nav-sidebar flex-column"
-            data-widget="treeview"
-            role="menu"
-          >
-            <li class="nav-item menu-open">
-              <ul class="nav nav-treeview">
-                <!-- User Control Dropdown -->
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-users nav-icon"></i>
-                    <p>
-                      User Control
-                      <i class="right fas fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <!-- Dropdown Items -->
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="user-profile.html" class="nav-link">
-                        <i class="fas fa-user nav-icon"></i>
-                        <!-- Changed to user icon -->
-                        <p>List User</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="user-settings.html" class="nav-link">
-                        <i class="fas fa-user-edit nav-icon"></i>
-                        <!-- Changed to user edit icon -->
-                        <p>Update User</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="user-settings.html" class="nav-link">
-                        <i class="fas fa-user-times nav-icon"></i>
-                        <!-- Changed to user delete icon -->
-                        <p>Delete User</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+      <div class="content-wrapper" style="min-height: 1302.12px">
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Create Sub Category</h1>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">Simple Tables</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <!-- Category Dropdown -->
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-th-large nav-icon"></i>
-                    <p>
-                      Category
-                      <i class="right fas fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <!-- Dropdown Items -->
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="category-list.html" class="nav-link">
-                        <i class="fas fa-list nav-icon"></i>
-                        <!-- Changed to list icon -->
-                        <p>Category List</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="./addcategory.htm" class="nav-link">
-                        <i class="fas fa-plus nav-icon"></i>
-                        <!-- Changed to add icon -->
-                        <p>Add Category</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="add-category.html" class="nav-link">
-                        <i class="fas fa-tag nav-icon"></i>
-                        <!-- Changed to tag icon -->
-                        <p>List Category</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card card-success">
+                  <div class="card-header">
+                    <h3 class="card-title">Sub-Category Detail</h3>
+                  </div>
 
-                <!-- Comment Dropdown -->
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-comments nav-icon"></i>
-                    <p>
-                      Comment
-                      <i class="right fas fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="comment-list.html" class="nav-link">
-                        <i class="fas fa-comment-dots nav-icon"></i>
-                        <!-- Changed to comment dots icon -->
-                        <p>Add Comment</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="comment-approval.html" class="nav-link">
-                        <i class="fas fa-comments nav-icon"></i>
-                        <!-- Kept comments icon -->
-                        <p>Comment List</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+                  <form>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="form-group col-md-12">
+                          <label for="subcategoryname">Sub Category Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="subcategoryname"
+                            placeholder="Name of sub category"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12">
+                          <label for="content">Content</label>
+                          <textarea
+                            type="text"
+                            class="form-control"
+                            id="content"
+                            placeholder="Sub-category content"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12">
+                          <label for="categoryid">Category Id</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="categoryid"
+                            placeholder="Mongo id of category"
+                          />
+                        </div>
+                      </div>
 
-                <!-- Follow Dropdown -->
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-user-plus nav-icon"></i>
-                    <p>
-                      Follow
-                      <i class="right fas fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="follower-list.html" class="nav-link">
-                        <i class="fas fa-user-friends nav-icon"></i>
-                        <!-- Changed to user friends icon -->
-                        <p>Follow</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="new-followers.html" class="nav-link">
-                        <i class="fas fa-users nav-icon"></i>
-                        <!-- Changed to users icon -->
-                        <p>List Followers</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <!-- Message Dropdown -->
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-envelope nav-icon"></i>
-                    <p>
-                      Message
-                      <i class="right fas fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="inbox.html" class="nav-link">
-                        <i class="fas fa-inbox nav-icon"></i>
-                        <!-- Changed to inbox icon -->
-                        <p>Inbox</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="sent-messages.html" class="nav-link">
-                        <i class="fas fa-paper-plane nav-icon"></i>
-                        <!-- Changed to paper plane icon -->
-                        <p>Sent Messages</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <!-- Post Dropdown -->
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-pencil-alt nav-icon"></i>
-                    <p>
-                      Post
-                      <i class="right fas fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="post-list.html" class="nav-link">
-                        <i class="fas fa-file-alt nav-icon"></i>
-                        <!-- Changed to file icon -->
-                        <p>Post List</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="create-post.html" class="nav-link">
-                        <i class="fas fa-plus-circle nav-icon"></i>
-                        <!-- Changed to plus circle icon -->
-                        <p>Create Post</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <!-- Sub-Category Dropdown -->
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-tags nav-icon"></i>
-                    <p>
-                      Sub-Category
-                      <i class="right fas fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="subcategory-list.html" class="nav-link">
-                        <i class="fas fa-tag nav-icon"></i>
-                        <!-- Changed to tag icon -->
-                        <p>Sub-Category List</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="add-subcategory.html" class="nav-link">
-                        <i class="fas fa-plus nav-icon"></i>
-                        <!-- Changed to plus icon -->
-                        <p>Add Sub-Category</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="settings.html" class="nav-link">
-                <i class="fas fa-cog nav-icon"></i>
-                <p>Settings</p>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="logout.html" class="nav-link">
-                <i class="fas fa-sign-out-alt nav-icon"></i>
-                <p>Logout</p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
-
-    <div
-      style="margin-left: 300px; margin-top: 30px; margin-right: 70px"
-      class="card card-success"
-    >
-      <div class="card-header">
-        <h3 class="card-title">Add Sub Category</h3>
-      </div>
-      <div class="card-body">
-        <form>
-          <input
-            class="form-control form-control-lg"
-            type="text"
-            placeholder="sub category name"
-          />
-          <br />
-          <textarea
-            class="form-control"
-            type="text"
-            placeholder="sub category content"
-          ></textarea>
-          <br />
-          <input
-            class="form-control form-control-lg"
-            type="text"
-            placeholder="sub category id"
-          />
-          <br />
-          <input class="btn btn-success" type="submit" />
-        </form>
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-success">
+                          Create Sub Category
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-
-    <!-- AdminLTE script to enable sidebar functionality -->
-    <script>
-      $(document).ready(function () {
-        $('[data-widget="pushmenu"]').PushMenu();
-      });
-    </script>
   </body>
 </html>
